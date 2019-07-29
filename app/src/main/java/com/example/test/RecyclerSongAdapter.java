@@ -58,9 +58,6 @@ public class RecyclerSongAdapter extends HFRecyclerView<SongList> {
 
     public class VH extends RecyclerView.ViewHolder {
 
-
-
-
         public VH(@NonNull View itemView) {
             super(itemView);
 
@@ -70,12 +67,16 @@ public class RecyclerSongAdapter extends HFRecyclerView<SongList> {
     public class ItemViewHolder extends RecyclerView.ViewHolder{
         @BindView(R.id.image)
         ImageView image;
+        @BindView(R.id.songsName)
+        TextView songsName;
         public ItemViewHolder(@NonNull View itemView) {
             super(itemView);
             ButterKnife.bind(this,itemView);
         }
         void bind(SongList item) {
-//            item.setText(item.value());
+
+            songsName.setText(item.getTitle());
+
             Glide.with(this.itemView)
                     .load(item.getPicHuge())
                     .into(image);

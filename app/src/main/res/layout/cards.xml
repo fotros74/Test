@@ -33,8 +33,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="خواننده"
-                android:textSize="35dp"
-                android:textStyle="bold"
+                android:textSize="20dp"
                 android:gravity="bottom"
                 android:layout_marginRight="20dp"
                 android:textColor="#000"/>
@@ -44,8 +43,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="آهنگ"
-                android:textSize="35dp"
-                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:textColor="#000"/>
         </RelativeLayout>
