@@ -1,6 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:clickable="true"
+        android:elevation="6dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="6dp"
+        android:layout_margin="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:layout_gravity="bottom">
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:src="@drawable/ic_launcher_background"
+                android:scaleType="centerCrop"/>
+            <TextView
+                android:id="@+id/singer"
+                android:layout_below="@+id/image"
+                android:layout_marginTop="-100dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="خواننده"
+                android:textSize="35dp"
+                android:textStyle="bold"
+                android:gravity="bottom"
+                android:layout_marginRight="20dp"
+                android:textColor="#000"/>
+            <TextView
+                android:id="@+id/songsName"
+                android:layout_below="@+id/singer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="آهنگ"
+                android:textSize="35dp"
+                android:textStyle="bold"
+                android:layout_marginRight="20dp"
+                android:textColor="#000"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
 
 </LinearLayout>
